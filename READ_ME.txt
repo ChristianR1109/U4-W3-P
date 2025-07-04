@@ -3,3 +3,4 @@ I join da fare erano pochi, altro motivo per cui ho deciso di utilizzare questa 
 mi avrebbero probabilmente reso più confuso lo svolgimento dell'esercizio, quindi anche per "ordine mentale" ho deciso di seguire questa strada.
 La decisione quindi è dovuta anche un po all'inesperienza e capacità di adattamento ai primi utilizzi, ho quindi dato maggior peso alla mia prima "impression" 
 nel leggere l'esercizio.
+Ho inoltre considerato l'elemento singolo per il prestito, come riportato nella descrizione dell'esercizio.
