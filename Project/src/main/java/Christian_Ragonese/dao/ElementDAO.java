@@ -47,4 +47,10 @@ public class ElementDAO {
         query.setParameter("author", author);
         return query.getResultList();
     }
+
+    public List<Element> findByPartOfTheTitle(String title) {
+        TypedQuery<Element> query = entityManager.createQuery("SELECT e FROM Element e WHERE LOWER(e.title) LIKE LOWER(:title) ", Element.class);
+        query.setParameter("title", "%" + title + "%");
+        return query.getResultList();
+    }
 }

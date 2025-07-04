@@ -59,4 +59,15 @@ public class User {
     public void setCard_number(long card_number) {
         this.card_number = card_number;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "user_id=" + user_id +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", b_date=" + b_date +
+                ", card_number=" + card_number +
+                '}';
+    }
 }

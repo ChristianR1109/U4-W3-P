@@ -25,21 +25,13 @@ public class Loan {
     public Loan() {
     }
 
-    public Loan(UUID loan_id, User user, LocalDate loan_start, LocalDate expected_end, LocalDate effective_end) {
-        this.loan_id = loan_id;
+    public Loan(User user, LocalDate loan_start, LocalDate expected_end, LocalDate effective_end) {
+
         this.user = user;
         this.loan_start = loan_start;
         this.expected_end = expected_end;
         this.effective_end = effective_end;
 
-    }
-
-    public UUID getLoan_id() {
-        return loan_id;
-    }
-
-    public void setLoan_id(UUID loan_id) {
-        this.loan_id = loan_id;
     }
 
     public User getUser() {
@@ -80,6 +72,18 @@ public class Loan {
 
     public void setElement(Element element) {
         this.element = element;
+    }
+
+    @Override
+    public String toString() {
+        return "Loan{" +
+                "loan_id=" + loan_id +
+                ", user=" + user +
+                ", loan_start=" + loan_start +
+                ", expected_end=" + expected_end +
+                ", effective_end=" + effective_end +
+                ", element=" + element +
+                '}';
     }
 }
 
