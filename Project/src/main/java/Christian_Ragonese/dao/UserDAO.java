@@ -20,5 +20,5 @@ public class UserDAO {
         System.out.println("Utente " + newUser.getName() + " salvato con successo!");
 
     }
-    public 
+
 }

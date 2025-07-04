@@ -20,6 +20,7 @@ public abstract class Element {
     private String title;
     private int pub_year;
     private int n_pages;
+
     @OneToMany(mappedBy = "element")
     private List<Loan> loans;
 
