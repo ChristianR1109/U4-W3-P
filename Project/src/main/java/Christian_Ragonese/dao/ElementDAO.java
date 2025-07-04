@@ -25,6 +25,13 @@ public class ElementDAO {
         System.out.println("L'elemento " + newElement.getTitle() + " è stato creato correttamente!");
     }
 
+    public Element findByIsbn(String isbn) {
+        TypedQuery<Element> query = entityManager.createQuery("SELECT e FROM Element e WHERE e.isbn = :isbn", Element.class);
+        query.setParameter("isbn", isbn);
+        return query.getSingleResult();
+
+    }
+
     public void deleteByIsbn(String isbn) {
         EntityTransaction transaction = entityManager.getTransaction();
         transaction.begin();
@@ -34,6 +41,7 @@ public class ElementDAO {
         transaction.commit();
         System.out.println("Elemento cancellato con successo");
     }
+
 
     public List<Element> findByPubYear(int pub_year) {
 

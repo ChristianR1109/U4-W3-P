@@ -41,11 +41,12 @@ public class Application {
         //ld.save(loan1);
         //ud.save(gino);
         //ud.save(mirco);
-        ud.save(marco);
-        ud.save(mimmo);
-        ld.save(loan4);
-        ld.save(loan5);
+//        ud.save(marco);
+//        ud.save(mimmo);
+//        ld.save(loan4);
+//        ld.save(loan5);
         //ed.deleteByIsbn("123456");
+        //System.out.println(ed.findByIsbn("12345"));
         //  System.out.println(ed.findByPubYear(2021));
 
         //System.out.println(ed.findByAuthor("IononTu"));
